@@ -1,0 +1,8 @@
+{
+  "name": "UrbanMind AI",
+  "description": "Developed for a four-hour hackathon, the project uses a Python FastAPI backend for high-velocity, asynchronous I/O and a sleek React + Tailwind CSS frontend. The intelligence layer relies on Google Gemini 1.5 Flash to perform low-latency, multimodal vision analysis on citizen-uploaded images, automatically classifying the issue (using an Open311 standard) and assigning a severity score. This structured data is instantly displayed on a dark-mode React-Leaflet map, creating a visually compelling \"Control Room\" aesthetic that highlights city hotspots for immediate action.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
