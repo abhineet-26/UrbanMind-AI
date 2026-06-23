@@ -48,27 +48,8 @@ const getIconHtml = (type: IssueType, severity: number) => {
   // immediately, we use a simpler approach for the return value below.
   // We'll return a raw string template for simplicity and performance.
   
-  const colorClass = severity >= 8 ? '#ef4444' : severity >= 5 ? '#f59e0b' : '#10b981';
-  
-  return `
-    <div style="
-      background-color: rgba(9, 9, 11, 0.85);
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(63, 63, 70, 0.5);
-      border-radius: 9999px;
-      padding: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 ${severity * 2}px ${colorClass};
-    ">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="${colorClass}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <circle cx="12" cy="12" r="3"></circle>
-      </svg>
-    </div>
-  `;
-};
+ const colorClass = severity >= 8 ? '#ef4444' : severity >= 5 ? '#f59e0b' : '#10b981';
+  return `...`;
 
 const MapController = ({ center }: { center: [number, number] }) => {
   const map = useMap();
