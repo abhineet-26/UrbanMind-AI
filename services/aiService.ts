@@ -2,9 +2,10 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { AnalysisResponse, IssueType } from "../types";
 
 // Initialize Gemini Client
-// The API key is securely loaded from process.env.API_KEY. 
-// Ensure this variable is set in your environment.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// The API key is securely loaded from your deployment environment variables. 
+const ai = new GoogleGenAI({ 
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY 
+});
 
 const RESPONSE_SCHEMA: Schema = {
   type: Type.OBJECT,
